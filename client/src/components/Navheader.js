@@ -4,13 +4,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //imported using destructuring
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
-import cart from '../img/cart/cart-white.png'
+import {FaShoppingCart} from 'react-icons/fa'
 
 
 const Navheader = () => {
   return (
-    <Navbar bg="dark" expand="lg" className="justify-content-between">
-    <Navbar.Brand href="#home" style={{color:'white'}}>We Sell Things</Navbar.Brand>
+    <Navbar bg="black" expand="lg"  
+      className="justify-content-between w-80">
+    <Navbar.Brand 
+      href="#home" 
+      style={{color:'white', padding:'10px'}}>We Sell Things</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto justify-content-between mr-5">
@@ -23,16 +26,13 @@ const Navheader = () => {
           style={{color:'white'}}
           href="#link">Link</Nav.Link>
         <NavDropdown 
-          className="pr-5" 
-          style={{color:'white'}}
-          size="" 
-          title={<img className="thumbnail-image"
-          src={cart}
-          alt="Cart" /> }
-          id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+          className="float-right" 
+          title={<FaShoppingCart alt="Cart" size={20} />}
+          id="basic-nav-dropdown"
+        >
+          <NavDropdown.Item href="#action/3.1">My Cart</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Order Total</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
         </NavDropdown>
