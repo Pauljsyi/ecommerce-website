@@ -4,18 +4,32 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //imported using destructuring
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
+import cart from '../img/cart/cart-white.png'
 
 
 const Navheader = () => {
   return (
-    <Navbar bg="light" expand="lg" className="justify-content-between">
-    <Navbar.Brand href="#home">We Sell Things</Navbar.Brand>
+    <Navbar bg="dark" expand="lg" className="justify-content-between">
+    <Navbar.Brand href="#home" style={{color:'white'}}>We Sell Things</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto justify-content-between mr-5">
-        <Nav.Link className="pr-5" href="#home">Home</Nav.Link>
-        <Nav.Link className="pr-5" href="#link">Link</Nav.Link>
-        <NavDropdown className="pr-5" title="Cart?" id="basic-nav-dropdown">
+        <Nav.Link 
+          className="pr-5" 
+          style={{color:'white'}}
+          href="#home">Home</Nav.Link>
+        <Nav.Link 
+          className="pr-5" 
+          style={{color:'white'}}
+          href="#link">Link</Nav.Link>
+        <NavDropdown 
+          className="pr-5" 
+          style={{color:'white'}}
+          size="" 
+          title={<img className="thumbnail-image"
+          src={cart}
+          alt="Cart" /> }
+          id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>

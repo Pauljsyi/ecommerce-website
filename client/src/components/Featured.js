@@ -1,32 +1,35 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import freepicks11 from '../img/free-picks11.jpg';
-import freepicks2 from '../img/free-picks2.jpeg';
-import freepicks3 from '../img/free-picks3.jpeg';
+import freepicks11 from '../img/freepicks11.jpg';
+import freepicks222 from '../img/freepicks222.jpg';
+import freepicks3 from '../img/freepicks3.jpg';
 
 
 
 const Featured = () => {
+
   return (
       <Carousel fade>
-        <Carousel.Item>
+        <Carousel.Item className="firstSlide">
           <img
-            className="d-block w-100"
-            height={500}
+            className="first d-block w-100"
+            backgroundPosition= 'center'
             src={freepicks11}
+            style={{ height: '500px', width: '80%'}}
             alt="First slide"
-            fluid
-            
+  
           />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        {/* <Carousel.Item>
+
+        <Carousel.Item className="secondSlide">
           <img
-            className="d-block w-100"
-            src={freepicks2}
+            className="second d-block w-100"
+            src={freepicks222}
+            style={{ height: '500px'}}
             alt="Second slide"
           />
       
@@ -35,10 +38,11 @@ const Featured = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="thirdSlide">
           <img
-            className="d-block w-100"
+            className="third d-block w-100"
             src={freepicks3}
+            style={{ height: '500px'}}
             alt="Third slide"
           />
       
@@ -46,7 +50,7 @@ const Featured = () => {
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </Carousel.Caption>
-        </Carousel.Item>*/}
+        </Carousel.Item>
       </Carousel> 
 
 

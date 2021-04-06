@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,15 +40,40 @@
 }
 
 /* =========================== */
+
+body {
+  background-image: url("img/background/background-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/* Navbar */
+/* Nav dropdown menu */
+#basic-nav-dropdown {
+  color: white;
+}
+
+
+
 /* Products Spacing */
 
-.card-group mt-5 {
-  margin-top: 100px;
+.card-group {
+  margin-top: 50px;
 }
 
 
+/* Carousel container position */
 .carousel {
-  width:900px;
+  width:70%;
   height:500px;
   margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
 }
+
+
