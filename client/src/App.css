@@ -42,7 +42,9 @@
 body {
 	background-image: url('img/background/background.jpeg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto 100%;
+	background-position: center;
+
 }
 
 /* Navbar */
@@ -64,7 +66,20 @@ body {
 /* Products Spacing */
 
 .deck {
-	margin: 150px
+	margin: 200px
+}
+
+.card {
+	
+	
+}
+
+.cardtitle {
+	color: white;
+}
+
+.cardtext {
+	color: white;
 }
 
 
