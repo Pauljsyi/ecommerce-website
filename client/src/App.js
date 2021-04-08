@@ -1,7 +1,8 @@
 import './App.css';
 import Navheader from './components/Navheader';
 import Products from './components/Products';
-import Featured from './components/Featured'
+import Featured from './components/Featured';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navheader />
       <Featured />
       <Products />
+      <Cart />
 
     </div>
   );

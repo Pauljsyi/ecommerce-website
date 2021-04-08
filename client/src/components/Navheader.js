@@ -2,6 +2,7 @@ import React from 'react';
 // imported using all
 // import * as ReactBootStrap from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import Cart from './Cart'
 //imported using destructuring
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {FaShoppingCart} from 'react-icons/fa'
@@ -26,12 +27,12 @@ const Navheader = () => {
         <Nav.Link 
           className="pr-5" 
           style={{color:'white'}}
-          href="#link">Link</Nav.Link>
+          href="#products">Shop Guitars</Nav.Link>
         <NavDropdown 
-          className="" 
           title={<FaShoppingCart alt="Cart" size={20} />}
           id="basic-nav-dropdown"
         >
+          {/* <Cart /> */}
           <NavDropdown.Item href="#action/3.1">My Cart</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Order Total</NavDropdown.Item>

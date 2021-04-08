@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 // import CardGroup from 'react-bootstrap/CardGroup';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Button from 'react-bootstrap/Button';
 
 import tele from '../img/customguitar/tele.jpeg';
 import redwood from '../img/customguitar/redwood.jpeg'
@@ -14,10 +15,10 @@ import wornlespaul from '../img/customguitar/wornlespaul.jpeg'
 
 const Products = () => {
   return (
-    <div className="deck">
+    <div className="deck" id="products">
   <CardDeck>
     <Card className="border-0 bg-transparent">
-      <Card.Img variant="top" src={tele} height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={tele} height="500" />
         <Card.Body className="cardbody">
           <Card.Title className="cardtitle">Fender Telecaster w/ Bigsby</Card.Title>
           <Card.Text className="cardtext">
@@ -26,16 +27,25 @@ const Products = () => {
         </Card.Body>
     </Card>
     <Card className="border-0 bg-transparent">
-      <Card.Img variant="top" src={redwood} height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={redwood} height="500" />
       <Card.Body className="cardbody">
         <Card.Title className="cardtitle">Brazillian Redwood Custom Acoustic</Card.Title>
         <Card.Text className="cardtext">
           $3,000
+          <Button 
+            className="add-to-cart m-5" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white'
+              }}>
+              Add to Cart
+          </Button>
         </Card.Text>
       </Card.Body>
     </Card>
     <Card className="border-0 bg-transparent">
-      <Card.Img variant="top" src={goldtop} 	height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={goldtop} 	height="500" />
       <Card.Body className="cardbody">
         <Card.Title className="cardtitle">Vintage 1958 Les Paul Goldtop</Card.Title>
         <Card.Text className="cardtext">
@@ -47,7 +57,7 @@ const Products = () => {
   <br />
   <CardDeck>
     <Card className="border-0 bg-transparent">
-      <Card.Img variant="top" src={burl} height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={burl} height="500" />
         <Card.Body className="cardbody">
           <Card.Title className="cardtitle">Custom Burl Wood Acoustic Guitar</Card.Title>
           <Card.Text className="cardtext">
@@ -56,7 +66,7 @@ const Products = () => {
         </Card.Body>
     </Card>
     <Card className="border-0 bg-transparent">
-      <Card.Img variant="top" src={es335} height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={es335} height="500" />
       <Card.Body className="cardbody">
         <Card.Title className="cardtitle">Gibson ES-335 style Custom Electric Guitar</Card.Title>
         <Card.Text className="cardtext">
@@ -65,7 +75,7 @@ const Products = () => {
       </Card.Body>
     </Card>
     <Card className="border-0  bg-transparent">
-      <Card.Img variant="top" src={cream} 	height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={cream} 	height="500" />
       <Card.Body className="cardbody">
         <Card.Title className="cardtitle">Vintage Fender American Standard Stratocaster</Card.Title>
         <Card.Text className="cardtext">
@@ -77,7 +87,7 @@ const Products = () => {
   <br />
   <CardDeck>
     <Card className="border-0 bg-transparent">
-      <Card.Img variant="top" src={wornlespaul} height="500" width="500"/>
+      <Card.Img className="card-image" variant="top" src={wornlespaul} height="500" />
         <Card.Body className="cardbody">
           <Card.Title className="cardtitle">Vintage Custom Les Paul Sunburst </Card.Title>
           <Card.Text className="cardtext">
@@ -86,7 +96,7 @@ const Products = () => {
         </Card.Body>
     </Card>
     <Card className="border-0 bg-transparent">
-      {/* <Card.Img variant="top" src={es335} height="500" width="500"/> */}
+      {/* <Card.Img variant="top" src={es335} height="500" /> */}
       <Card.Body className="cardbody">
         <Card.Title className="cardtitle">
           {/* Title */}
@@ -97,7 +107,7 @@ const Products = () => {
       </Card.Body>
     </Card>
     <Card className="border-0  bg-transparent">
-      {/* <Card.Img variant="top" src={cream} 	height="500" width="500"/> */}
+      {/* <Card.Img variant="top" src={cream} 	height="500" /> */}
       <Card.Body className="cardbody">
         <Card.Title className="cardtitle">
           {/* Title */}
