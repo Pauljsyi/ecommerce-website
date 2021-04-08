@@ -5,15 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //imported using destructuring
 import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {FaShoppingCart} from 'react-icons/fa'
+import paradigmlogo from '../img/logo/paradigm-guitar-logo-white.png'
 
 
 const Navheader = () => {
   return (
-    <Navbar bg="black" expand="lg"  
-      className="justify-content-between w-80">
+    <Navbar expand="lg"  
+      className="nav">
     <Navbar.Brand 
+      className="navlogo"
       href="#home" 
-      style={{color:'white', padding:'10px'}}>We Sell Things</Navbar.Brand>
+      style={{color:'white'}}><img src={paradigmlogo} alt="paradigm guitar logo" width='200' height='100'/></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto justify-content-between mr-5">
@@ -26,7 +28,7 @@ const Navheader = () => {
           style={{color:'white'}}
           href="#link">Link</Nav.Link>
         <NavDropdown 
-          className="float-right" 
+          className="" 
           title={<FaShoppingCart alt="Cart" size={20} />}
           id="basic-nav-dropdown"
         >

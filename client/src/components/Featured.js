@@ -1,54 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import freepicks11 from '../img/freepicks11.jpg';
-import freepicks222 from '../img/freepicks222.jpg';
-import freepicks3 from '../img/freepicks3.jpg';
+import luthier from '../img/customguitar/luthier.jpg';
+import custom from '../img/customguitar/custom.jpg';
+import vintage from '../img/customguitar/vintage.jpg';
 
 
 
 const Featured = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
 
   return (
-      <Carousel fade>
+      <Carousel fade activeIndex={index} onSelect={handleSelect}>
+      
         <Carousel.Item className="firstSlide">
           <img
             className="first d-block w-100"
             backgroundPosition= 'center'
-            src={freepicks11}
+            src={custom}
             style={{ height: '500px', width: '80%'}}
             alt="First slide"
   
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Custom Shop</h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item className="secondSlide">
           <img
             className="second d-block w-100"
-            src={freepicks222}
+            src={luthier}
             style={{ height: '500px'}}
             alt="Second slide"
           />
       
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Repairs & Build</h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="thirdSlide">
           <img
             className="third d-block w-100"
-            src={freepicks3}
-            style={{ height: '500px'}}
+            src={vintage}
+            style={{ height: '500px', color: 'black' }}
+            
             alt="Third slide"
           />
       
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>Vintage Shop</h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel> 
