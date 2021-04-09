@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import luthier from '../img/customguitar/luthier.jpg';
-import custom from '../img/customguitar/custom.jpg';
-import vintage from '../img/customguitar/vintage.jpg';
+import luthier from '../img/customguitar/featured/luthier.jpg';
+import custom from '../img/customguitar/featured/custom.jpg';
+import vintage from '../img/customguitar/featured/vintage.jpg';
 
 
 

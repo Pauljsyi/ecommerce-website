@@ -40,11 +40,10 @@
 /* =========================== */
 
 body {
-	background-image: url('img/background/background.jpeg');
+	background-image: url('img/background/feather.jpeg');
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: center;
-
 }
 
 /* Navbar */
@@ -64,6 +63,11 @@ body {
 }
 
 /* Products Spacing */
+.products-header {
+	color: white;
+	margin-bottom: 150px;
+	text-align: center;
+}
 
 .deck {
 	margin: 200px

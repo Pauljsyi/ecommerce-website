@@ -4,18 +4,19 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 
-import tele from '../img/customguitar/tele.jpeg';
-import redwood from '../img/customguitar/redwood.jpeg'
-import goldtop from '../img/customguitar/goldtop.jpeg'
-import burl from '../img/customguitar/burl.jpeg'
-import es335 from '../img/customguitar/es-335.jpeg'
-import cream from '../img/customguitar/cream.jpeg'
-import wornlespaul from '../img/customguitar/wornlespaul.jpeg'
+import tele from '../img/customguitar/products/tele.jpg';
+import redwood from '../img/customguitar/products/redwood.jpg';
+import goldtop from '../img/customguitar/products/goldtop.jpg';
+import burl1 from '../img/customguitar/products/burl1.jpg';
+import es335 from '../img/customguitar/products/es-335.jpg';
+import cream from '../img/customguitar/products/cream.jpg';
+import wornlespaul from '../img/customguitar/products/wornlespaul.jpg'
 
 
 const Products = () => {
   return (
     <div className="deck" id="products">
+    <h1 className="products-header">Shop Guitars</h1>
   <CardDeck>
     <Card className="border-0 bg-transparent">
       <Card.Img className="card-image" variant="top" src={tele} height="500" />
@@ -23,6 +24,16 @@ const Products = () => {
           <Card.Title className="cardtitle">Fender Telecaster w/ Bigsby</Card.Title>
           <Card.Text className="cardtext">
             $1,500
+            <Button 
+            className="add-to-cart" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white',
+              float: 'right'
+              }}>
+              Add to Cart
+          </Button>
           </Card.Text>
         </Card.Body>
     </Card>
@@ -33,11 +44,12 @@ const Products = () => {
         <Card.Text className="cardtext">
           $3,000
           <Button 
-            className="add-to-cart m-5" 
+            className="add-to-cart" 
             variant="outline-dark" 
             size="sm" 
             style={{
-              color: 'white'
+              color: 'white',
+              float: 'right'
               }}>
               Add to Cart
           </Button>
@@ -50,6 +62,16 @@ const Products = () => {
         <Card.Title className="cardtitle">Vintage 1958 Les Paul Goldtop</Card.Title>
         <Card.Text className="cardtext">
           $8,000
+          <Button 
+            className="add-to-cart" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white',
+              float: 'right'
+              }}>
+              Add to Cart
+          </Button>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -57,11 +79,21 @@ const Products = () => {
   <br />
   <CardDeck>
     <Card className="border-0 bg-transparent">
-      <Card.Img className="card-image" variant="top" src={burl} height="500" />
+      <Card.Img className="card-image" variant="top" src={burl1} height="500" />
         <Card.Body className="cardbody">
           <Card.Title className="cardtitle">Custom Burl Wood Acoustic Guitar</Card.Title>
           <Card.Text className="cardtext">
             $1,500
+            <Button 
+            className="add-to-cart" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white',
+              float: 'right'
+              }}>
+              Add to Cart
+          </Button>
           </Card.Text>
         </Card.Body>
     </Card>
@@ -71,6 +103,16 @@ const Products = () => {
         <Card.Title className="cardtitle">Gibson ES-335 style Custom Electric Guitar</Card.Title>
         <Card.Text className="cardtext">
           $3,000
+          <Button 
+            className="add-to-cart" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white',
+              float: 'right'
+              }}>
+              Add to Cart
+          </Button>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -80,6 +122,16 @@ const Products = () => {
         <Card.Title className="cardtitle">Vintage Fender American Standard Stratocaster</Card.Title>
         <Card.Text className="cardtext">
           $8,000
+          <Button 
+            className="add-to-cart" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white',
+              float: 'right'
+              }}>
+              Add to Cart
+          </Button>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -92,9 +144,21 @@ const Products = () => {
           <Card.Title className="cardtitle">Vintage Custom Les Paul Sunburst </Card.Title>
           <Card.Text className="cardtext">
             $2,500
+            <Button 
+            className="add-to-cart" 
+            variant="outline-dark" 
+            size="sm" 
+            style={{
+              color: 'white',
+              float: 'right'
+              }}>
+              Add to Cart
+          </Button>
           </Card.Text>
         </Card.Body>
     </Card>
+
+    {/* additional cards */}
     <Card className="border-0 bg-transparent">
       {/* <Card.Img variant="top" src={es335} height="500" /> */}
       <Card.Body className="cardbody">
