@@ -14,9 +14,9 @@ const Featured = () => {
   };
 
   return (
-      <Carousel fade activeIndex={index} onSelect={handleSelect}>
+      <Carousel  fade activeIndex={index} onSelect={handleSelect}>
       
-        <Carousel.Item className="firstSlide">
+        <Carousel.Item className="rounded-3 firstSlide">
           <img
             className="first d-block w-100"
             backgroundPosition= 'center'

@@ -14,6 +14,7 @@ import wornlespaul from '../img/customguitar/products/wornlespaul.jpg'
 
 
 const Products = () => {
+
   return (
     <div className="deck" id="products">
     <h1 className="products-header">Shop Guitars</h1>

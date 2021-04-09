@@ -9,9 +9,8 @@ function App() {
     <div>
       <Navheader />
       <Featured />
-      <Products />
+      {/* <Products /> */}
       <Cart />
-
     </div>
   );
 }
